@@ -1,0 +1,145 @@
+body {
+    background-color: #1d1d1d;
+    margin: auto;
+}
+
+h1 {
+    color: #2eb912d9;
+    box-sizing: content-box;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-left: 20px;
+    /* margin: 10px; */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.code-input {
+    box-shadow: 0px 0px 5px #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: #262626;
+
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.code-input>* {
+    flex: 1 500px;
+    height: 500px;
+    /* box-sizing: border-box; */
+    padding: 10px;
+    /* background-color: #5c5c5c; */
+    /* border-radius: 20px; */
+}
+
+.editor {
+    overflow: scroll;
+    height: 500px;
+    display: inline-flex;
+    gap: 10px;
+    font-family: monospace;
+    line-height: 21px;
+    background: #282a3a;
+    border-radius: 2px;
+    padding: 20px 10px;
+}
+
+
+
+.line-numbers {
+    width: 20px;
+    text-align: right;
+}
+
+.line-numbers span {
+    counter-increment: linenumber;
+}
+
+.line-numbers span::before {
+    content: counter(linenumber);
+    display: block;
+    color: #506882;
+
+}
+
+textarea {
+    line-height: 21px;
+    overflow-y: hidden;
+    padding: 0;
+    border: 0;
+    background: #282a3a;
+    color: #FFF;
+    min-width: 500px;
+    outline: none;
+    resize: none;
+}
+
+#myInput1 {
+
+    background-color: #253325;
+
+}
+
+#myInput2 {
+    background-color: #2a1b1b;
+}
+
+/* input {
+    font-size: 1.2rem;
+    font-family: "JetBrains Mono", "Source Code Pro", sans-serif;
+    padding: 10px;
+    min-height: 500px;
+    line-height: 1rem; */
+/* vertical-align: top; */
+/* text-align: ; */
+/* background-color: #1b1c1b; */
+/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+/* box-sizing: border-box;
+    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid #9c9b9b; */
+
+/* } */
+
+
+/* input::placeholder {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #92db92d4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+button {
+    margin: auto;
+    width: fit-content;
+    border-radius: 10px;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7e9;
+    transition-duration: 0.45s;
+    border: 1px solid #393939;
+}
+
+button:hover {
+    background-color: #5e5d5d;
+    box-shadow: 0px 0px 5px #e6e6e6;
+}
