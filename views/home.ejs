@@ -11,12 +11,18 @@
 <body>
     <% console.log(responses) %>
         <% responses.forEach(function(response) { %>
-            <% if(response.startswith('+')){ %>
-                <p style="color: green">response</p>
-                <% } else if(response.startswith('-')){ %>
-                    <p style="color: red">response</p>
+            <% if(response.startsWith('+')){ %>
+                <p style="color: green">
+                    <%= response %>
+                </p>
+                <% } else if(response.startsWith('-')){ %>
+                    <p style="color: red">
+                        <%= response %>
+                    </p>
                     <% } else { %>
-                        <p style="color: blue">response</p>
+                        <p style="color: blue">
+                            <%= response %>
+                        </p>
                         <% }}); %>
 
 
