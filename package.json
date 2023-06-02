@@ -1,7 +1,7 @@
 {
   "name": "diffutility",
   "version": "1.0.0",
-  "description": "",
+  "description": "diff utility using node.js",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "node": "^20.2.0"
   }
