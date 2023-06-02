@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <link rel="stylesheet" href="/css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diff utility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Orbitron&family=Source+Code+Pro:wght@200;300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <h1>Diff Utility</h1>
     <% console.log(responses) %>
         <% responses.forEach(function(response) { %>
             <% if(response.startsWith('+')){ %>
