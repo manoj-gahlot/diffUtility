@@ -13,7 +13,7 @@ app.get("/", function (req, res) {
 app.post("/", function (req, res) {
     // alert("hello");
     // res.set('Content-Type', 'text/plain');
-    console.log(req.body);
+    // console.log(req.body);
     // console.log(algo(req.body.response1, req.body.response2));
     // console.log("ehllsdlfjk");
     const diff = algo(req.body.response1, req.body.response2);
